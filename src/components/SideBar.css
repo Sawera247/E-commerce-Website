@@ -1,0 +1,14 @@
+.sidebar {
+    font-family: 'Raleway', sans-serif;
+}
+
+.sidebar li a.active{
+    color: black;
+    text-decoration: underline;
+}
+
+.sidebar li a:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}

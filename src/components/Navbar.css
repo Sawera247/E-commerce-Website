@@ -1,0 +1,22 @@
+.logo{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu{
+    font-family: 'Raleway', sans-serif;
+}
+
+.menu li a.active{
+    color: black;
+    text-decoration: underline;
+}
+
+.menu li a:hover{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.search{
+    font-family: 'Roboto', sans-serif;
+}
