@@ -1,0 +1,8 @@
+.footer{
+    font-family: "Roboto", sans-serif;
+}
+
+.footer li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}

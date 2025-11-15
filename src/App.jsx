@@ -4,9 +4,8 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
-import Signup from './pages/Signup'
 import Cart from './pages/Cart'
-import Category from './pages/Category'
+import Checkout from './pages/CheckOut'
 
 const App = () => {
   return (
@@ -17,9 +16,8 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/about" element={<About />} />
-          <Route path="/signup" element={<Signup />} />
           <Route path="/cart" element={<Cart />} />
-          <Route path="/category" element={<Category />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
       </div>
     </Router>

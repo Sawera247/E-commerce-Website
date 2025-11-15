@@ -5,13 +5,10 @@ import "./Banner.css";
 const Banner = () => {
   return (
     <div className="flex flex-col sm:flex-row">
-      
       <SideBar />
 
-      {/* Divider */}
       <div className="border-l border-gray-300 mx-2 sm:mx-4"></div>
 
-      {/* Banner Box */}
       <div className="banner 
                       bg-black text-white 
                       py-3
