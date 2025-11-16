@@ -3,6 +3,7 @@ import Cards from './Cards'
 import Cates from './Cates'
 import Product from '../fetching data/product';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const Explore = () => {
   const products = Product().slice(11, 19);
@@ -12,7 +13,7 @@ const Explore = () => {
         <Cates heading={'Our Products'} headline={'Explore Our Products'}/>
         <Cards products={products}/>
         <div className='flex justify-center items-center my-10'>
-          <Button text="View All Products"/>
+          <Link to={'/shop'}><Button text="View All Products"/></Link>
         </div>
     </div>
   )

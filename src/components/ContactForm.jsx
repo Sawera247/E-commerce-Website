@@ -1,12 +1,11 @@
 import React from "react";
 import Input from "./input";
 import Button from "./Button";
-import Footer from "./Footer";
 
 const ContactForm = () => {
   return (
     <>
-      <div className="flex flex-col gap-8 items-center justify-center min-h-[90vh] px-4 sm:px-10">
+      <div className="flex flex-col gap-8 items-center justify-center shadow-lg p-4 sm:p-10 w-full max-w-xl">
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-10 max-w-5xl">
           <Input type="text" text="Your Name" required className="flex-1" />
@@ -22,8 +21,6 @@ const ContactForm = () => {
         {/* Button */}
         <Button text="Send Message" className="w-full max-w-xs sm:max-w-sm" />
       </div>
-
-      <Footer />
     </>
   );
 };

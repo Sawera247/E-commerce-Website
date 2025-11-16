@@ -1,6 +1,7 @@
 import React from "react";
 import SideBar from "./SideBar";
 import "./Banner.css";
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
@@ -30,7 +31,7 @@ const Banner = () => {
           </p>
 
           <p className="mt-3">
-            <a href="#" className="underline">Shop Now</a>
+            <Link to={'/shop'} className="underline">Shop Now</Link>
           </p>
         </div>
 

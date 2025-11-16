@@ -3,6 +3,7 @@ import Cards from './Cards';
 import Product from '../fetching data/product';
 import FlashSale from './FlashSale';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 
 const TodayCard = () => {
   const products = Product().slice(0, 4);
@@ -13,7 +14,7 @@ const TodayCard = () => {
         <FlashSale/>
         <Cards products={products} discount={discount}/>
         <div className='flex justify-center items-center my-10'>
-          <Button text="View All Products"/>
+          <Link to={'/shop'}><Button text="View All Products"/></Link>
         </div>
         <div className='border-1 border-[#ececec] mx-10 my-5'></div>
     </>

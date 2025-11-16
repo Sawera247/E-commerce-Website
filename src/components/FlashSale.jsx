@@ -44,9 +44,9 @@ const FlashSale = () => {
       </div>
 
       <div className="flex flex-col sm:flex-row sm:gap-10">
-        <p className="text-2xl sm:text-4xl font-semibold mt-7">Flash Sales</p>
+        <p className="text-3xl sm:text-4xl font-semibold my-4">Flash Sales</p>
 
-        <ul className="flex flex-wrap sm:flex-nowrap text-xl sm:text-4xl gap-3 sm:gap-6 font-bold sm:mt-1 items-center">
+        <ul className="flex flex-wrap sm:flex-nowrap text-xl sm:text-4xl gap-3 sm:gap-6 font-bold sm:mt-1 items-center my-4">
           <li className="flex flex-col items-center">
             <span className="text-xs sm:text-sm font-semibold">Days</span>
             {timeLeft.days}

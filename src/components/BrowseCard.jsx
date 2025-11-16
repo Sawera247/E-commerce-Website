@@ -1,5 +1,4 @@
 import React from 'react'
-import './BrowseCard.css'
 import Cates from './Cates'
 import { BsSmartwatch, BsController, BsTelephone, BsHeadphones, BsCamera, BsLaptop } from 'react-icons/bs'
 

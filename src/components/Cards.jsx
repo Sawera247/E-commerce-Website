@@ -3,6 +3,7 @@ import Product from '../fetching data/product';
 import { db } from '../Config/Firebase';
 import { ref, push, onValue } from 'firebase/database';
 import { useNavigate } from 'react-router-dom';
+import CartSummary from './CartSummary';
 
 const Cards = ({ products: propProducts, discount }) => {
   const allProducts = Product();
@@ -45,12 +46,15 @@ const Cards = ({ products: propProducts, discount }) => {
         {products.map((product) => (
           <div key={product.id} className="relative group">
             {discount && (
-              <p className="absolute top-2 left-2 bg-[#db4444] text-white px-3 py-1 rounded text-sm z-10">
+              <p className="absolute top-2 left-2 bg-[#db4444] text-white px-3 py-1 rounded text-sm">
                 -{discount}%
               </p>
             )}
             <div className="relative">
-              <div className="border border-[#f5f5f5] py-10 rounded shadow overflow-hidden">
+              <div
+                onClick={() => navigate(`/product/${product.id}`)}
+                className="border border-[#f5f5f5] py-10 rounded shadow overflow-hidden cursor-pointer"
+              >
                 <img
                   src={product.image}
                   alt={product.name}
@@ -94,20 +98,7 @@ const Cards = ({ products: propProducts, discount }) => {
         ))}
       </div>
 
-      {cartSummary.totalItems > 0 && (
-        <div className="fixed font-semibold bottom-0 left-0 w-full bg-black text-white flex justify-between items-center px-6 py-3 shadow-lg">
-          <p>
-            Total Item{cartSummary.totalItems > 1 ? 's' : ''} : {cartSummary.totalItems} <br />
-            Total Price: {cartSummary.totalPrice.toFixed(2)}
-          </p>
-          <button
-            onClick={() => navigate('/cart')}
-            className="bg-[#db4444] hover:bg-red-600 px-4 py-2 rounded font-semibold"
-          >
-            Place Order
-          </button>
-        </div>
-      )}
+      <CartSummary/>
     </>
   );
 };

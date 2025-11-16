@@ -18,7 +18,6 @@ const Home = () => {
       <Banner2/> 
       <Explore/>
       <Trust/>
-      <Footer/>
     </div>
   )
 }

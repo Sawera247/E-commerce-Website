@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import './Banner2.css'
 
 const Banner2 = () => {
     const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0, seconds: 0 });
